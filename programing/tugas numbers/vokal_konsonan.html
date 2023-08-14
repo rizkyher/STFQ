@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>coba</title>
+    </head>
+    <body>
+        
+        <script>
+            function cek_vokal(Text){
+                let vokal = "";
+                let konsonan = "";
+                const spasi = "  "
+                for(let i = 0 ; i < Text.length ; i++)
+                    {
+                        let cek = Text[i];
+                        if ("aiueo".includes(cek)){
+                            vokal += cek;
+                        }
+                        else {
+                            konsonan += cek;
+                        }
+                    }
+                    alert('vokalnya'+spasi+vokal)
+                    alert('konsonannya'+spasi+konsonan)
+                    console.log('vokal'+spasi+vokal+'dan konsonannya'+spasi+konsonan)
+                    return(vokal,konsonan)
+            }
+            
+        </script>
+    </body>
+</html>

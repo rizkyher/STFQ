@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>
+            Daftar Buku
+        </title>
+        <style>
+              body {
+                background-image: url(poto.jpg) ;
+            background-size: cover;
+              }
+            #container-akun {
+                background-color: rgba(122, 72, 31, 0.678);
+                border-radius: 10px;
+                box-shadow: 10px 1px 9px 1px rgba(0, 0, 0, 0.377);
+                margin: auto;
+                margin-top: 150px;
+                max-width: 700px;
+                width: 100%;
+                height: 100%;
+                max-height: 400px;
+                display: grid;
+                grid-template-areas: 
+                'nav nav nav'
+                'logo headers-tittle headers-tittle'
+                'daftar-buku table-buku table-buku'
+                'daftar-buku table-buku table-buku';
+            }
+            #container-akun .nav {
+                grid-area: nav;
+                text-align: right;
+                margin-right: 30px;
+                padding: 10px;
+            }
+            #container-akun .logo {
+                grid-area: logo;
+                margin;0%
+                width: ;
+                height: 80px;
+               
+            }
+            #container-akun .logo img{
+                width: 100px;
+                margin-bottom: 10px;
+                float: right;
+                margin-right: 20px;
+                border: 1px solid black;
+                border-radius: 18px;
+                background-image: url(/tugas/hutan.png);
+                background-size: 100px 100px ;
+                background-repeat: no-repeat;
+            }
+            #container-akun .headers-tittle {
+                grid-area: headers-tittle;
+                font-size: 30px;
+                width: 300px;
+                padding-left: 20px;
+                color: orange;
+                
+            }
+            #container-akun .daftar-buku {
+                grid-area: daftar-buku;
+                text-align: center;
+                border: 1px solid rgba(0, 0, 0, 0.322);
+                
+            }
+            #container-akun .table-buku {
+                border: 1px solid rgba(0, 0, 0, 0.288);
+                border-radius: ;
+                grid-area: table-buku;
+                
+            }
+          
+            table {
+                background-color: rgba(176, 241, 156, 0.212);
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td, th {
+                border: 1px solid rgb(255, 255, 255);
+                text-align:left ;
+                padding: 8px;
+                color: whitesmoke;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            tr:nth-child(even) {
+                background-color: rgba(245, 183, 67, 0.438);
+            }
+
+            form button {
+                margin-left: 15px;
+                overflow: hidden;
+                display: block;
+                background-color: rgb(92, 92, 243);
+                color: antiquewhite;
+                margin-top: 30px;
+            }
+            #container-akun > div.daftar-buku > form:nth-child(1) > button{
+                overflow: hidden;
+                display: block;
+                margin-top: 30px;
+                background: antiquewhite;
+                color: rgb(90, 90, 241);
+                border-style: inset;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container-akun">
+            <div class="nav">
+                <a href="profile.html">Profile</a> | <a href="index.html">Logout</a>
+            </div>
+            <div class="logo"><img src="/campur/1.png" alt=""></div>
+            <div class="headers-tittle">Selamat Datang di Perpustakaan Online</div>
+            <div class="daftar-buku">
+                <form action="daftar-buku.html">
+                    <button type="button">Daftar Buku</button>
+                </form>
+                <form action="buku-baru.html">
+                    <button>Buku Baru</button>
+                </form>
+            </div>
+                <div class="table-buku">
+                    <table>
+                        <tr>
+                            <th>No</th>
+                            <th>ISBN</th>
+                            <th>Judul</th>
+                            <th>Penerbit</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <th>01</th>
+                            <th>190289</th>
+                            <th>Menjadi Manusia</th>
+                            <th>AngkasaCorp</th>
+                            <th>tersedia</th>
+                        </tr>
+                        <tr>
+                            <th>02</th>
+                            <th>89022920</th>
+                            <th>Rindu Pencipta</th>
+                            <th>gramedia</th>
+                            <th>tersedia</th>
+                        </tr>
+                        <tr>
+                            <th>03</th>
+                            <th>77282200</th>
+                            <th>Bumi</th>
+                            <th>Studiobray</th>
+                            <th>tersedia</th>
+                        </tr>
+                    </table>
+                </div>  
+        </div>
+    </body>
+</html>

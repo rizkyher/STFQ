@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>
+            tugas
+        </title>
+    </head>
+    <body>
+        <button onclick="umur()">menurut kementrian indonesia</button>
+        <script>
+            
+          function umur(){
+            let hitungumur = prompt("masukan umur anda")
+            const spasi = '  '
+            
+            if (hitungumur <=0  ) {
+                alert('Belum Lahir')
+                console.log('belum lahir')
+            }
+
+            else if (hitungumur >0 && hitungumur < 5){
+                alert('umur'+spasi+hitungumur+spasi+'masa balita')
+                console.log('masa balita')
+            } 
+            else if (hitungumur >=5 && hitungumur <= 11){
+                alert('umur'+spasi+hitungumur+spasi+'masa kanak-kanak')
+                console.log('umur'+spasi+hitungumur+spasi+'masa kanak kanak')
+            }
+            else if (hitungumur >=12 && hitungumur <=16 ){
+                alert('umur'+spasi+hitungumur+spasi+'masa remaja awal')
+                console.log('umur'+spasi+hitungumur+spasi+'masa remaja awal')
+            }
+            else if (hitungumur >=17 && hitungumur <=25 ){
+                alert('umur'+spasi+hitungumur+spasi+'masa remaja akhir')
+                console.log('umur'+spasi+hitungumur+spasi+'masa remaja akhir')
+            }
+            else if (hitungumur >=26 && hitungumur <=35 ){
+                alert('umur'+spasi+hitungumur+spasi+'masa dewasa awal')
+                console.log('umur'+spasi+hitungumur+spasi+'masa dewasa awal')
+            }
+            else if (hitungumur >=36 && hitungumur <=45 ){
+                alert('umur'+spasi+hitungumur+spasi+'masa dewasa akhir')
+                console.log('umur'+spasi+hitungumur+spasi+'masa dewasa akhir')
+            }
+            else if (hitungumur >=46 && hitungumur <=55 ){
+                alert('umur'+spasi+hitungumur+spasi+'masa lansia awal')
+                console.log('umur'+spasi+hitungumur+spasi+'masa lansia awal')
+            }
+            else if (hitungumur >=56 && hitungumur <=65 ){
+                alert('umur'+spasi+hitungumur+spasi+'masa lansia akhir')
+                console.log('umur'+spasi+hitungumur+spasi+'masa lansia akhir')
+            }
+            else if (hitungumur >65 ){
+                alert('umur'+spasi+hitungumur+spasi+'masa manula')
+                console.log('umur'+spasi+hitungumur+spasi+'masa manula')
+            }
+            else  {
+                alert('maaf masukan umur anda ')
+            }
+            return
+          }
+
+        </script>
+    </body>
+</html>

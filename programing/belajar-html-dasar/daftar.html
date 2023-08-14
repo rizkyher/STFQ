@@ -1,0 +1,143 @@
+<html>
+    <title>
+        Perpustakaan Online
+    </title>
+    <style>
+        body {
+            background-image: url(poto.jpg) ;
+            background-size: cover;
+        }
+    #container {
+        background-color: rgba(122, 72, 31, 0.678);
+        border-radius: 60px;
+        box-shadow: 10px 1px 9px 1px rgba(0, 0, 0, 0.377);
+        margin: auto;
+        margin-top: 50px;
+        width: 100%;
+        max-width: 700px;
+        max-height: 900px;
+        gap: 20px;
+        position: center;
+        border-radius: 30px;
+        display: grid;
+        grid-template-areas: 
+        'headers-title headers-title'
+        'logo form';
+    }
+    #container .headers-title {
+        margin-left:20px ;
+        grid-area: headers-title;
+        color: orange;
+        width: 550px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    #container .headers-title h2 {
+        color:rgba(238, 198, 89, 0.514);
+    
+    }
+    #container .logo {
+        grid-area: logo;
+        margin right: 20px ;
+        width: 400px;
+        height: 300px;
+     
+    }
+    #container .logo img {
+       width: 66%;
+       background-image: url(/tugas/hutan.png);
+       background-size: 100px 100px ;
+       border: 1px solid black;
+       border-radius: 150px;
+       margin-left: 60px;
+       margin-top: 10px;
+       
+    }
+       
+    #container .form {
+        grid-area: form;
+        width: 200px;
+        margin-right: 20px;
+        text-align: center;
+        writing-mode: horizontal-tb !important;
+        box-sizing: border-box;
+        appearance: auto;
+        user-select: none;
+        align-items: flex-start;
+        cursor: default;
+        background-color: transparent;
+        color:white;
+        padding-right: 400px;
+        border-width: 2px;
+        border-color: buttonborder;
+        border-image: initial;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #container .form input {
+        width: 200px;
+        padding: 5px;
+        color: black ;
+       
+    }
+    #container .form button{
+        background-color: rgb(255, 127, 8);
+        width: 200px;
+        margin-top: 10px ;
+        padding: 5px;
+        color: antiquewhite ;
+        font-size: 15px;
+    }
+     
+    #container .logo .form {
+        border: 1px;
+        box-shadow: 0px 10px 15px black;
+    }
+    a {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 20px;
+        padding-left: 75px;
+        color: white;
+        cursor: pointer;
+        text-decoration: ;
+    }
+    p {
+        width: 200px;
+        font-size: 20px;
+        margin: 0%;
+        text-align: left;
+        color: orange;
+    }
+    textarea {
+        width: 200px;
+    }
+    </style>
+    <body>
+        <div id="container">
+             <div class="headers-title">
+            <h1><b>Selamat Datang Di Perpustakaan Online</b></h1>
+            <h2>Pendaftaran</h2>
+            </div>
+            <div class="logo"><img src="/campur/1.png" alt="" ></div>
+            <div class="form"> <form action="index.html" method="get">
+                <p>Username:</p>
+                <input type="email; text" name="Email/Username" placeholder="Username"><br>
+                <p>Password:</p>
+                <input type="password" name="Password" placeholder="Password"><br>
+                <P>Ulangi Password</P>
+                <input type="password" name="password" placeholder="Ulangi password">
+                <br>
+                <p>Nama Lengkap:</p>
+                <input type="text" name="Nama Lengkap" placeholder="Nama Lengkap">
+                <br>
+                <p>Alamat:</p>
+                <textarea name="Alamat" placeholder="Isi dengan alamat yang sesuai"></textarea>
+                <br><button>Daftar</button>
+                <p><a href="index.html">Login</a></p>
+            </form>  
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+body { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    min-height: 100vh;
+    background: url(hutan.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.background {
+    background-color:transparent;
+
+}
+
+.container {
+    width: 960px;
+    max-width:500px ;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 0px 10px 15px black;
+    background: url('perpuss.jpeg') no-repeat;  
+    background-size: 43%; 
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+.container .index {
+    margin: 60px auto;
+    text-align: center;
+    width: 100%; 
+    font-size: 30px;   
+}
+
+.container .index .judul {
+    margin: 60px auto;
+    text-align: right;  
+    font-size: 15px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;  
+}
+
+.container .index .right {
+    margin: ;   
+    float: left; 
+    padding-left: 59px;
+    padding-top: 60px;
+}
+
+.container .index .form {
+    margin: 6px auto;
+    text-align: right;  
+    font-size: 15px;
+    padding:  
+}
+
+.container .index .form .buat-form {
+    margin: 60px auto;
+    text-align: right;  
+    font-size: 15px;
+    padding:  
+}
+
+.container-2 {
+    width: 960px;
+    max-width:900px ;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 0px 10px 15px black;
+    background: url('perpuss.jpeg') no-repeat;  
+    background-size: 42%; 
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.container-2 .index {
+    margin: 60px auto;
+    text-align: center;
+    width: 100%; 
+    font-size: 30px;   
+}
+
+hr {
+    padding-left: ;
+    border-top: 2px solid gray;
+}
+
+h1 {
+    padding-left: 200px;
+    margin-top: 30px;
+    text-align: center ;
+    font-weight: ; border: white;
+    font-size: 19;
+    text-transform: uppercase ;
+}
+
+.container-2 .index .judul {
+    margin: 60px auto;
+    text-align: right;  
+    font-size: 15px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;  
+}
+
+.container-2 .index .right {
+    margin: 115px ;   
+    float: left; 
+    padding-right: 10px;
+    padding-top: 60px;
+}
+
+textarea {
+    width: 450px;
+}
+.container-2 .index .form {
+    margin: 6px auto;
+    text-align: left;  
+    font-size: 15px;
+    padding-right: :  
+}
+
+.container .index .form .buat-form {
+    margin: 60px auto;
+    text-align: right;  
+    font-size: 15px;
+    padding:  
+}
+
+.container .index .form .daftar-form {
+    margin: 60px auto;
+    text-align: right;  
+    font-size: 15px;  
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+form input {
+    height: 30px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    width: 50%;
+    margin: px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid ;
+    text-align-last: center;
+    color: black;
+    background-color: whitesmoke;
+
+}
+
+.container .daftar {
+    text-align: right;
+    margin: 10px;
+}
+
+.container .index .form .login-form  {
+    margin: auto;
+    text-align: right;  
+    font-size: 15px;
+    padding: 10px; 
+    padding-right: 30px;
+    padding-bottom: 15px; 
+}
+
+.container .index .form .daftar-form  {
+    margin: auto;
+    text-align: right;  
+    font-size: 15px;
+    padding: 10px; 
+    padding-right: 30px;
+    padding-bottom: 15px; 
+}
+
+.form p {
+    text-align: center;
+    padding-left: 210px;
+}
+
+.form h1 {
+    text-align: center;
+    font-size: 15;
+    padding-left: -5px;
+}
+
+.container .index .form .buat-form  {
+    margin: auto;
+    text-align: right;  
+    font-size: 15px;
+    padding: 10px; 
+    padding-right: 30px; 
+}
+
+.buat-form label,input {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container-3 {
+    width: 960px;
+    max-width:500px ;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 0px 10px 15px black;
+    background: url('perpuss.jpeg') no-repeat;  
+    background-size: cover; 
+
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+}

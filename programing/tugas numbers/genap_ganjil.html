@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            nyoba
+        </title>
+    </head>
+    <body>
+      <button onclick="bilangan()">Cek</button>  
+        <script>
+            function bilangan(){
+                let input = prompt ("masukan nomor")
+                const spasi = " "
+                if (isNaN(input)){
+                    alert(input +spasi+ "bukan nomor")
+                }
+                else {
+                    if(input % 2 === 0){
+                        alert(input+spasi+"ini bilangan genap")
+                    }
+                    else {
+                        alert(input+spasi+("ini bilangan ganjil"))
+                    }
+                }
+            }
+
+        </script>
+    </body>
+</html>

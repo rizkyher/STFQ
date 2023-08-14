@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            coba if
+        </title>
+    </head>
+    <body>
+        <h1>mencoba if</h1>
+        <p id="nyapa"></p>
+        <p id="nanggal"></p>
+        <script>
+            const time = new Date().getHours();
+            let sapaan;
+            let tanggal;
+            if (Date = 8) {
+                tanggal = "hari ini";
+                alert('hari rabu')
+            }
+            else {
+                tanggal = "kemarin";
+            }
+            document.getElementById("nanggal").innerHTML = tanggal
+            if (time < 10) {
+                sapaan = "selamat pagi";
+            }
+            else if (time < 15) {
+                sapaan = "selamat siang";
+            }
+            else {
+                sapaan = "selamat sore";
+            }
+            document.getElementById("nyapa").innerHTML = sapaan
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            coba if
+        </title>
+    </head>
+    <body>
+        <label for="weather">pilih cuaca hari ini: </label>
+<select id="weather">
+  <option value="">--buat pilihan--</option>
+  <option value="sunny">panas</option>
+  <option value="rainy">hujan</option>
+  <option value="snowing">dingin</option>
+  <option value="overcast">kemarau</option>
+</select>
+
+<p></p>
+
+
+<script>
+    const select = document.querySelector("select");
+const para = document.querySelector("p");
+
+select.addEventListener("change", setWeather);
+
+function setWeather() {
+  const choice = select.value;
+
+  if (choice === "sunny") {
+    para.textContent =
+      "panas kieumah enakna makan makanan anu tiis ";
+  } else if (choice === "rainy") {
+    para.textContent =
+      "hujan angin dor dar gelap";
+  } else if (choice === "snowing") {
+    para.textContent =
+      "tariris tea ieu ciwidey meni ngadegdeg";
+  } else if (choice === "overcast") {
+    para.textContent =
+      "waduh halodo";
+  } else {
+    para.textContent = "";
+  }
+}
+
+</script>
+    </body>
+</html>

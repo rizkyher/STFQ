@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            percobaan
+        </title>
+        <link rel="stylesheet" href="/css/coba.css ">
+        <link rel="stylesheet" href="/2.png">
+        <style>
+            a[href^='mailto']::before{
+                content: '📧';
+            }
+            a[href^='tel']::before{
+                content: '📞';
+            }
+            h1 {background-color: rgb(248, 244, 237); border: 1px solid black ; column-width: 50%; text-align: center;}
+            </style>
+    </head>
+    <body>
+        <h1>MENCOBA LAGI</h1>
+        <h1>Percobaan</h1>
+        <h2>hasil dari 20 x 9 adalah</h2>
+        <p id="coba"></p>
+        <h2>hasil dari 900 x 0.5 adalah</h2>
+        <p id="masbro"></p>
+        <div class="ab1">
+            <dl class="madodet">
+                <dt>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْمِ</dt>
+                <dd>"Dengan Menyebut Nama Allah Yang Maha Pengasih Maha Penyayang"</dd>
+            </dl>
+        </div>
+        <address>
+            <a href="mailto:rizkyherdiansyah31@gmail.com">rizkyherdiansyah31@gmail.com</a>
+            <a href="tel:+6285163554496">+6285163554496</a>
+            </address>
+            <input type="button" value="pencet" onclick="alert('punteuuun')" >
+            <input type="button" value="pencet 2" onclick="showalert('obet','19')" >
+            <input type="button" value="pencet 3" onmouseover="alert('haleug haleug')" >
+            <p id="obet"></p>
+
+            <input id="nomber" type="number" maxlength="5">
+            <script>
+                
+                    function rumus(p1,p2){
+                return p1 * p2;
+            }
+            let result = rumus(20,9)
+            document.getElementById("coba").innerHTML = result
+
+            let jaw = rumus(900,0.5)
+            document.getElementById("masbro").innerHTML = jaw
+                document.writeln("helloooooo")
+                function showalert(varname, varumur){
+                    alert(varname)
+                    alert(varumur)
+
+                }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>profile akun Perpustakaan online</title>
+        <style>
+            body{
+                background-image: url(poto.jpg) ;
+            background-size: cover;
+            }
+            div {
+                
+            }
+            #container-profile {
+                background-color: rgba(122, 72, 31, 0.678);
+                border-radius: 10px;
+                box-shadow: 10px 1px 9px 1px rgba(0, 0, 0, 0.377);
+                margin: auto;
+                margin-top: 150px;
+                max-width: 700px;
+                width: 100%;
+                height: 100%;
+                max-height: 400px;
+                display: grid;
+                grid-template-areas: 
+                'nav nav nav'
+                'logo headers-tittle headers-tittle'
+                'profile-button table-profile table-profile'
+                'profile-button table-profile table-profile';
+            }
+            
+            #container-profile .nav{
+                grid-area: nav;
+                text-align: right;
+                margin-right: 30px;
+                padding: 10px;
+            }
+            #container-profile .logo {
+                grid-area: logo;
+                margin;0%
+                width: ;
+                ;
+            }
+            #container-profile .logo img{
+                width: 100px;
+                height: 100px;
+                float: right;
+                margin-right: 20px;
+                border: 1px solid black;
+                border-radius: 18px;
+                background-image: url(/tugas/hutan.png);
+                background-size: 100px 100px ;
+                background-repeat: no-repeat;
+            }
+            #container-profile .headers-tittle{
+                grid-area:headers-tittle;
+                font-size: 30px;
+                width: 300px;
+                padding-left: 20px;
+                color: whitesmoke;
+                font-size: 35px;
+            }
+            #container-profile .profile-button{
+                grid-area: profile-button;
+                width: 100%;
+                text-align: center;
+                border: 1px solid rgba(0, 0, 0, 0.322);
+            }
+            #container-profile .table-profile {
+                grid-area: table-profile;
+                padding: 10px;
+                width: 100%;
+                max-width: 410px;
+                padding-left: 50px;
+                border: 1px solid rgba(0, 0, 0, 0.288);
+            }
+          
+            
+            input{
+                width: 200px;
+                padding: 10px;
+                margin: 3px;
+                background-color: rgb(176, 241, 156);
+                color: black;
+            }
+
+            button {
+                background-color: rgb(92, 92, 243);
+                color: antiquewhite;
+                margin-top:5px;
+                margin-left: 5px;
+                width: 100px;
+                padding: 5px
+                
+            }
+
+            form button {
+                font-size: 12px;
+                margin-left: 5px;
+                margin-top: 10px;
+                padding: 5px;
+                
+            }
+            #container-profile > div.profile-button > form:nth-child(2) > button{
+                overflow: hidden;
+                display: block;
+                margin-top: 30px;
+                background: antiquewhite;
+                color: rgb(34, 34, 230);
+                border-style: inset;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container-profile">
+            <div class="nav">
+                <a href="daftar-buku.html">Daftar Buku</a> | <a href="index.html">Logout</a>
+            </div>
+            <div class="logo"><img src="/campur/1.png" alt=""></div>
+            <div class="headers-tittle">Selamat Datang di Perpustakaan Online</div>
+            <div class="profile-button">
+                <Form action="profile.html">
+                    <Button>Profile</Button>
+                </Form>
+                <form action="pass.html">
+                    <button>Edit Pass</button>
+                </form>
+            </div>
+            <div class="table-profile">
+                <form action="buku-baru.html">
+                    <input type="password" name="pass lama" placeholder="Pass lama"><br>
+                    <input type="password" name="Pass Baru" placeholder="Pass Baru"><br>
+                    <input type="password" name="Pass Baru" placeholder="Pass Baru Lagi"><br>
+                    <button>Edit Password</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

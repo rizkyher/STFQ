@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>
+            Buku Baru
+        </title>
+        <style>
+              body {
+                background-image: url(poto.jpg) ;
+            background-size: cover;
+        }
+            div {
+                padding: 10px;
+                
+            }
+            #container-akun {
+                background-color: rgba(122, 72, 31, 0.678);
+                border-radius: 10px;
+                box-shadow: 10px 1px 9px 1px rgba(0, 0, 0, 0.377);
+                margin: auto;
+                margin-top: 100px;
+                max-width: 620px;
+                width: 100%;
+                height: 100%;
+                max-height: 480px;
+                display: grid;
+                grid-template-areas: 
+                'nav nav nav'
+                'logo headers-tittle headers-tittle'
+                'daftar-buku form-buku form-buku'
+                'daftar-buku form-buku form-buku';
+            }
+            #container-akun .nav {
+                grid-area: nav;
+                text-align: right;
+            }
+            #container-akun .logo {
+                grid-area: logo;
+                margin;0%;
+                margin-right: 10px
+            }
+            #container-akun .logo img{
+                width: 100px;
+                margin-bottom: 10px;
+                float: right;
+                margin-right: 0;
+                border: 1px solid black;
+                border-radius: 18px;
+                background-image: url(/tugas/hutan.png);
+                background-size: 100px 100px ;
+                background-repeat: no-repeat;
+            }
+            #container-akun .headers-tittle {
+                grid-area: headers-tittle;
+                font-size: 30px;
+                width: 300px;
+                color: whitesmoke;
+            }
+            #container-akun .daftar-buku {
+                grid-area: daftar-buku;
+                text-align: center;
+                border: 1px solid rgba(0, 0, 0, 0.288);
+            }
+            #container-akun .form-buku {
+                grid-area: form-buku;
+                padding: 10px;
+                width: 100%;
+                max-width: 380px;
+                padding-left: 50px;
+                border: 1px solid rgba(0, 0, 0, 0.288);
+            }
+
+            input{
+                width: 200px;
+                padding: 10px;
+                margin: 3px;
+                background-color: rgb(176, 241, 156);
+                color: black;
+            }
+
+            button {
+                background-color: rgb(92, 92, 243);
+                color: antiquewhite;
+                margin-top:5px;
+                margin-left: 5px;
+                width: 100;
+                
+            }
+
+            form button {
+                font-size: 15px;
+                margin-left: 5px;
+                margin-top: 10px;
+                
+            }
+            #container-akun > div.daftar-buku > form:nth-child(2) > button{
+                overflow: hidden;
+                display: block;
+                margin-top: 30px;
+                background: antiquewhite;
+                color: rgb(90, 90, 241);
+                border-style: inset;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container-akun">
+            <div class="nav">
+                <a href="profile.html">Profile</a> | <a href="index.html">Logout</a>
+            </div>
+            <div class="logo"><img src="/campur/1.png" alt=""></div>
+            <div class="headers-tittle">Selamat Datang di Perpustakaan Online</div>
+            <div class="daftar-buku">
+                <form action="daftar-buku.html">
+                    <button>Daftar Buku</button>
+                </form>
+                <form action="buku-baru.html">
+                    <button>Buku Baru</button>
+            </div>
+            <div class="form-buku">
+                <form action="buku-baru.html">
+                    <input type="number" name="No ISBN" placeholder="NO ISBN"><br>
+                    <input type="text" name="Judul Buku" placeholder="Judul Buku"><br>
+                    <input type="text" name="Penerbit" placeholder="Penerbit"><br>
+                    <input type="number" name="Tahun" placeholder="Tahun"><br>
+                    <input type="text" name="category" placeholder="category"><br>
+                    <button>Simpan Buku</button><button>Cancel</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

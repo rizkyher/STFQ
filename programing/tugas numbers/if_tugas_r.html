@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+            tugas
+        </title>
+    </head>
+    <body>
+
+        <p id="jadi"></p>
+        <script>
+            
+             function rumus_luas_segitiga(alas,tinggi){
+                const hasil = (1/2 * alas )* tinggi;
+                const spasi = ' ';
+                
+
+                if (hasil < 0 ){
+                    console.log('hasil dari luas ini adalah negatif')
+                }
+                else if (hasil < 10 && hasil >= 0){
+                    console.log('hasil dari luas ini adalah x dan jenisnya adalah satuan yaitu' + hasil)
+                }
+                else if (hasil >= 10 && hasil < 20){
+                    console.log('hasil dari luas ini adalah x dan jenisnya adalah belasan' + hasil)
+                    alert('lebih dari sepuluh'+spasi + hasil)
+                }
+                else if (hasil >= 20 && hasil < 100){
+                    console.log('hasil dari luas ini adalah x dan jenisnya adalah puluhan'+ spasi + hasil)
+                }
+                else if (hasil >= 100 && hasil < 1000){
+                    console.log('hasil dari luas ini adalah x dan jenisnya adalah ratusan'+ spasi + hasil)
+                }
+                else if (hasil >= 1000 && hasil < 10000){
+                    console.log('hasil dari luas ini adalah x dan jenisnya adalah ribuan dan ini adalah benda yang kecil'+ spasi + hasil)
+                }
+                else if (hasil >= 10000 && hasil < 100000){
+                    console.log('hasil dari luas ini adalah x dan ini adalah benda yang sedang'+ spasi + hasil)
+                }
+                else if (hasil >= 100000 ){
+                    console.log('hasil dari luas ini adalah x dan ini adalah benda yang besar'+ spasi + hasil)
+                }
+                else {
+                    alert('data invalid')
+                    console.log('data invalid')
+                }
+                document.getElementById("jadi").innerHTML = 'hasil dari luas ini adalah'+spasi + hasil
+                return hasil
+            }
+             
+             rumus_luas_segitiga(90,2)
+
+        </script>
+    </body>
+</html>

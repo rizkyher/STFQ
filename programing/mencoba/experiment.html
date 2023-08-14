@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            coba form
+        </title>
+    </head>
+    <body>
+        <form class="login_form" method="post" name="form" onsubmit="return validated()">
+            <input type="text" name="email">
+            <input type="password" name="password">
+            <button type="submit">pencet</button>
+        </form>
+        <script>
+            let email = document.forms['form']['email']
+            let password = document.forms['form']['password']
+
+            function validated(){
+                if (email.value.lenght < 5){
+                    alert(isi)
+                    return false
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            nyoba ngitung umur
+        </title>
+    </head>
+    <body>
+            <b>isi tanggal lahir <input type="date" id="BOS"></b>
+            <span id="pesan" style="color: red;"></span>
+            <br><br>
+            <button type="submit" onclick="umurCalculator()">hitung umur</button>
+            <br><br>
+            <h3 style="color: blue;" id="hasil" align="center"></h3>
+        <script>
+            function umurCalculator(){
+                var input = document.getElementById("BOS").value;
+                var bos = new Date(userinput);
+                if(userinput==null || userinput=='') {
+                    document.getElementById("pesan").innerHTML = "harap pilih tanggal!";
+                    return false;
+                } else {
+                    var bulan_diff = Date.now() - bos.getTime();
+                    var umur_dt = new Date(bulan_diff);
+                    var tahun = umur_dt.getUTCFullYear();
+                    var umur = Math.abs(tahun - 1970);
+                    return document.getElementById("hasil").innerHTML = "umur :"+ umur +"tahun";
+                }
+            }
+        </script> 
+        </body>
+</html>

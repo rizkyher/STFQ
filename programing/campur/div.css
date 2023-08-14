@@ -1,0 +1,16 @@
+
+.top {
+    border: 20px ridge green;
+    background-color: white;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.top img {
+    width: 100%;
+}
+
+.top {
+    font: small-caps bold 1.2rem sans-serif;
+    text-align: center;
+}

@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>profile akun Perpustakaan online</title>
+        <style>
+            body{
+                background-image: url(poto.jpg) ;
+            background-size: cover;
+            }
+            div {
+                
+            }
+            #container-profile {
+                background-color: rgba(122, 72, 31, 0.678);
+                border-radius: 10px;
+                box-shadow: 10px 1px 9px 1px rgba(0, 0, 0, 0.377);
+                margin: auto;
+                margin-top: 100px;
+                max-width: 700px;
+                width: 100%;
+                height: 100%;
+                max-height: 500px;
+                display: grid;
+                grid-template-areas: 
+                'nav nav nav'
+                'logo headers-tittle headers-tittle'
+                'profile-button table-profile table-profile'
+                'profile-button table-profile table-profile';
+            }
+            
+            #container-profile .nav{
+                grid-area: nav;
+                text-align: right;
+                margin-right: 30px;
+                padding: 10px;
+            }
+            #container-profile .logo {
+                grid-area: logo;
+                margin;0%
+                height: 50px;
+            }
+            #container-profile .logo img{
+                width: 100px;
+                margin-top: px;
+                float: right;
+                margin-right: 20px;
+                border: 1px solid black;
+                border-radius: 18px;
+                background-image: url(/tugas/hutan.png);
+                background-size: 100px 100px ;
+                background-repeat: no-repeat;
+            }
+            #container-profile .headers-tittle{
+                grid-area:headers-tittle;
+                font-size: 30px;
+                width: 300px;
+                color: whitesmoke;
+                padding-left: 20px;
+                font-size: 35px;
+            }
+            #container-profile .profile-button{
+                grid-area: profile-button;
+                text-align: center;
+                border: 1px solid rgba(0, 0, 0, 0.322);
+            }
+            #container-profile .table-profile {
+                grid-area: table-profile;
+                border: 1px solid rgba(0, 0, 0, 0.322);;
+            }
+            form button {
+                background-color: rgb(92, 92, 243);
+                color: antiquewhite;
+                margin:0px
+            }
+            
+            .table-profile img {
+                width: 100%;
+                max-width: 100px;
+                border: 1px solid black;
+                margin-left: 150px;
+                border-radius: 30px;
+            }
+            form{
+                margin: 0px;
+            }
+            button {
+                width: 100px;
+                padding: 5px;
+            }
+            p  {
+                color: whitesmoke;
+                font-size: 20px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            #container-profile > div.profile-button > form:nth-child(1) > button{
+                overflow: hidden;
+                display: block;
+                margin-top: 30px;
+                background: antiquewhite;
+                color: rgb(34, 34, 230);
+                border-style: inset;
+            }
+            a {
+                background-color: rgba(245, 245, 220, 0.192);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container-profile">
+            <div class="nav">
+                <a href="daftar-buku.html">Daftar Buku</a> | <a href="index.html">Logout</a>
+            </div>
+            <div class="logo"><img src="/campur/1.png" alt=""></div>
+            <div class="headers-tittle">Selamat Datang di Perpustakaan Online</div>
+            <div class="profile-button">
+                <Form action="profile.html">
+                    <Button>Profile</Button><br>
+                </Form>
+                <form action="pass.html">
+                    <button>Edit Pass</button>
+                </form>
+            </div>
+            <div class="table-profile">
+                <img src="foto.jpg" alt="">
+                <p><ins>Nama: RIzky Herdiansyah</ins></p>
+                <p><Ins>Tanggal Lahir: !4, Agustus 2004</Ins></p>
+                <p><ins>Alamat:Bandung, Jl. Karasak Lama Cibintinu no 17</ins></p>
+            </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+div {
+    border: 1px solid blue;
+}
+
+.header {
+    padding: 10px;
+}
+
+.header .logo,
+.header .coba {
+    padding: 5px;
+}
+
+.header .logo {
+    background-color: aquamarine;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.header .logo img {
+    width: 100px;
+}
+.header .coba {
+    width: 500px;
+    display: inline ;
+}
+
+h1 {
+    color: orange;
+}

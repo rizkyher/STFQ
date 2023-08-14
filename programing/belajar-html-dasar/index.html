@@ -1,0 +1,154 @@
+<html>
+    <title>
+        Perpustakaan Online
+    </title>
+    <meta charset="UTF-8">
+    <script src="/js/percobaan.js"></script>
+    <style>
+        body {
+            background-image: url(poto.jpg) ;
+            background-size: cover;
+        }
+    #container {
+        background-color: rgba(122, 72, 31, 0.678);
+        border-radius: 60px;
+        box-shadow: 10px 1px 9px 1px rgba(0, 0, 0, 0.377);
+        margin: auto;
+        margin-top: 100px;
+        width: 100%;
+        max-width: 650px;
+        max-height: 500px;
+        gap: 20px;
+        gap
+        border-radius: 15px;
+        display: grid;
+        grid-template-areas: 
+        'headers-title headers-title'
+        'logo form';
+    }
+    #container .headers-title {
+        margin-left: 30px;
+        grid-area: headers-title;
+        width: 550px;
+        color: orange;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    #container .headers-title h2 {
+        color: rgba(238, 198, 89, 0.514);
+    }
+    #container .logo {
+        grid-area: logo;
+        margin: 0;
+        width: 350px;
+        height: 250px;
+     
+    }
+    #container .logo img {
+       width: 50%;
+       background-image: url(/tugas/hutan.png);
+       background-size: cover;
+       border: 1px solid black;
+       border-radius: 150px;
+       margin-left: 100px;
+    }
+       
+    #container .form {
+        grid-area: form;
+        width: 200px;
+        margin-right: 200px;
+        text-align: center;
+        box-sizing: border-box;
+        color:white;
+        padding-right: 400px;
+        border-width: 2px;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #container .form input {
+        width: 200px;
+        padding: 5px;
+        margin-right: 200px;
+        color: black ;
+       
+    }
+    #container .form button{
+        background: rgb(255, 127, 8);
+        width: 200px;
+        padding: 5px;
+        color: antiquewhite ;
+        font-size: 15px;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 3px;
+        border: 1px solid rgb(101, 101, 255) ;
+        transition: .5s;
+    }
+     
+    #container .logo.form {
+        border: 1px solid black;
+        box-shadow: 0px 10px 15px black;
+    }
+    a {
+        text-align: center;
+        font-size: 20px;
+        padding-left: 70px;
+        color: white;
+    }
+    p {
+        margin: 0%;
+        text-align: left;
+        color: orange;
+        font-size: 15px;
+    }
+
+    .form button:hover {
+      background: rgb(171, 171, 241); ;
+       
+       
+
+    }
+
+    .form #email-error,
+    .form #pass-error {
+        margin-top: 5px;
+        width: 200px;
+        font-size: 15px;
+        color: rgb(243, 92, 92);
+        background: rgba(255,  0, 0, 0.1);
+        text-align: center;
+        border-radius: 3px;
+        padding: 5px 8px;
+        border: 1px solid #EF9A9A;
+        display: none;
+
+    }
+    </style>
+    <body>
+        <div id="container">
+             <div class="headers-title">
+            <h1><b>Selamat Datang Di Perpustakaan Online</b></h1>
+            <h2>Mohon untuk Login</h2>
+            <hr>
+            </div>
+            <div class="logo"><img src="/campur/1.png" alt="" ></div>
+            <div class="form"> 
+                <form action="daftar-buku.html" method="ges" name="bill" onsubmit="return 
+                validated()">
+                <p>Username:</p>
+                <input autocomplete="off" type="email; text" name="email" placeholder="Username">
+                <div id="email-error">silahkan isi email anda</div><br>
+                <p>Password:</p>
+                <input type="password" name="password" placeholder="Password"><br>
+                <div id="pass-error">silahkan isi password anda</div>
+                <br>
+                <button type="submit"> Login</button>
+            </form>  
+            <a href="daftar.html">Daftar</a>
+            </div>
+        </div>
+        
+    </body>
+</html>
