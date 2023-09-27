@@ -1,0 +1,53 @@
+/*variable*/
+/*mixin*/
+/*if*/
+/*else*/
+/*body*/
+body {
+  background-color: #808FF1;
+  margin: 0;
+  padding: 0;
+}
+
+/*nav*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  background-color: #03045E;
+  color: white;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  color: white;
+}
+
+/*picture*/
+.square-pic {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.circle-pic {
+  width: 80px;
+  height: 80px;
+  border: 5px solid white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.footer li {
+  display: inline-block;
+}/*# sourceMappingURL=main.css.map */

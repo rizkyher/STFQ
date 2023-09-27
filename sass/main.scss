@@ -1,0 +1,89 @@
+/*variable*/
+$primary-color: #435dee;
+$secondary-color: #808FF1;
+
+/*mixin*/
+@mixin flex-box($direction: row, $space :center) {
+    display: flex;
+    justify-content: $space;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+/*if*/
+@mixin picture($size, $circle: false) {
+    width: $size;
+    height: $size;
+    border: 5px solid white;
+    box-shadow: 1px 1px 1px rgba($color: #000, $alpha: .3);
+
+    @if $circle {
+        border-radius: 50%;
+    }
+}
+
+/*else*/
+$dark-bg: #03045E;
+$dark-text: #ffff;
+$light-bg: #90E0EF;
+$light-text: #000;
+
+@mixin color-mode($light-mode: true) {
+    @if $light-mode==red {
+        background-color: $light-bg;
+        color: $light-text;
+    }
+
+    @else if $light-mode==blue {
+        background-color: $dark-bg;
+        color: $dark-text;
+    }
+
+    @else {
+        background-color: $dark-bg;
+        color: $dark-text;
+    }
+}
+
+/*body*/
+body {
+    background-color: $secondary-color;
+    margin: 0;
+    padding: 0
+}
+
+
+/*nav*/
+nav {
+    @include flex-box(row, flex-end);
+
+    @include color-mode($light-mode: false);
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        color: #ffff;
+    }
+}
+
+
+/*picture*/
+.square-pic {
+    @include picture(200px, $circle: false)
+}
+
+.circle-pic {
+    @include picture(80px, $circle: true)
+}
+
+
+/*footer*/
+.footer {
+    @include flex-box(row, flex);
+
+    li {
+        display: inline-block
+    }
+}
