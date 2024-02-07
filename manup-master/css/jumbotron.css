@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+/* hero section */
+
+.img-hero img {
+    width: auto !important;
+    height: 100% !important;
+    
+}
+
+.hero-section .hero-text {
+    padding-top: 5px !important;
+    padding-bottom: 60px !important;
+}
+
+.succes {
+    font-size: 60px !important;
+    color: #05b3af !important;
+}
+
+.pendekatan {
+    color: white !important;
+}
+
+.btn {
+    font-family: "roboto", sans-serif !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    width: 220px !important;
+    padding: 15px !important;
+    color: rgb(255, 255, 255) !important;
+    background-color: #006967 !important;
+    border-radius: 25px !important;
+    border-color: #006967 !important;
+}
+
+.btn a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.btn:hover {
+    background:#05b3af !important;
+}
+
+/* count section */
+section.bg-gradient {
+    background: #05b3af !important;
+}
+
+.cd-item {
+    background: #006967 !important;
+}
+
+.col-lg-8 {
+    padding-top: 60px !important;
+}
+
+.counter-section .cd-timer {
+    text-align: center !important;
+}
+
+/* responsive */
+@media only screen and (max-width: 767px) {
+    .succes {
+        font-size: 40px !important;
+    }
+}

@@ -1,0 +1,16 @@
+[
+    {
+        "nama": "rizky",
+        "umur": 19,
+        "hobby": [
+            "berenang",
+            "coding",
+            "gaming"
+        ],
+        "pembimbing":{
+            "pembimbing1": "Ust Dimas",
+            "pembimbing2": "Ust Rofiq",
+            "pembimbing3": "Ust Indra"
+        }
+    }
+]

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions Section
+--------------------------------------------------------------*/
+.program {
+  padding: 1em;
+  font-family: 'Work Sans', sans-serif !important;
+  /*background-color: rgba(0, 170, 255, 0.062) !important;*/
+}
+.program .content h3 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+.program .content h3 span {
+    color: #096686;
+  }
+  
+  .program .content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  
+  .program .content p {
+    font-size: 15px;
+    color: #6c757d;
+  }
+  
+  .program .accordion-item {
+    border: 0;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+  }
+  
+  .program .accordion-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .program .accordion-collapse {
+    border: 0;
+  }
+  
+  .program .accordion-button {
+    padding: 20px 50px 20px 20px;
+    font-weight: 600;
+    border: 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: black ;
+    text-align: left;
+    background: #fff;
+    box-shadow: none;
+    border-radius: 10px;
+  }
+  
+  .program .accordion-button .num {
+    padding-right: 10px;
+    font-size: 20px;
+    line-height: 0;
+    color: #096686;
+  }
+  
+  .program .accordion-button:not(.collapsed) {
+    color: #096686;
+    border-bottom: 0;
+    box-shadow: none;
+    background-color: rgba(0, 170, 255, 0.093) !important;
+  }
+  
+  .program .accordion-button:after {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #096686;
+
+  }
+  
+  .program .accordion-body {
+    padding: 0 40px 30px 45px;
+    border: 0;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: none;
+    padding-top: 1.5em;
+  }

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+.ha-pic {
+  width: 100% !important;
+  margin-top: 10rem !important;
+  box-shadow: none !important;
+}
+
+.edit-text {
+  color: #096686 !important;
+}
+.edit-font {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 1.2em !important;
+  font-weight: 450 !important;
+  color: black !important;
+  text-align: left;
+}
+
+
+.edit-bold {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: black;
+  font-family: 'inter', sans-serif
+}
+
+.edit-about {
+  /*background-color: rgba(0, 170, 255, 0.062) !important;*/
+  padding-top: 0rem !important;
+}
