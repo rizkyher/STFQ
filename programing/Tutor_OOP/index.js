@@ -16,7 +16,6 @@ class program {
 	}
 };
 
-const anggota = new program('rizky','lisa')
 
 class data extends program {
 	constructor({frontend, backend,kantor,waktu}){
@@ -55,11 +54,9 @@ class master {
 
 }
 
-let number1 = new master ({
-	nama: 'rizky herdiansyah',
-	ilmu: 'programing',
-	penguasaan: '200',
-})
+const anggota = new program('rizky','lisa')
+
+let number1 = new master('rizky herdiansyah','programing','200')
 
 let baru = new data({
 	frontend: 'rizky',
@@ -72,7 +69,7 @@ let rei = new data({
 	backend:'asep',
 	kantor:'jl. babakan ciparay 2',
 	waktu:'20 april 2023'
-
+	
 })
 
 console.log(number1)
@@ -82,4 +79,84 @@ console.log(number1)
 
 // console.log(baru.getTanggal())
 // console.log(rei.getAnggota())
+// class Car {
+// 	constructor(owner = 'Tidak diketahui', name = 'Tidak diketahui') {
+// 		this.owner = owner
+// 		this.name = name
+
+// 	}
+
+// 	drive() {
+// 		return `The ${this.name} car owned by ${this.owner} drives on the road`
+// 	}
+
+// 	getOwner() {
+// 		return this.owner
+// 	}
+
+// 	getOwner() {
+// 		return this.name
+// 	}
+// }
+
+// class SportsCar extends Car {
+// 	constructor({owner, name, color, price, engine}) {
+// 		super(owner, name)
+// 		this.color = color
+// 		this.price = price
+// 		this.engine = engine
+// 	}
+
+// 	getColor() {
+// 		return this.color
+// 	}
+	
+// 	getPrice() {
+// 		const formattedPrice = new Intl.NumberFormat('en-US', {
+// 			style: 'currency',
+// 			currency: 'USD',
+// 			minimumFractionDigits: 0
+// 		}).format(this.price)
+		
+// 		return formattedPrice
+// 	}
+// 	getEngine() {
+// 		return this.engine
+// 	}
+// }
+// const myCar = new Car('Elon', 'Tesla Model S')
+
+// console.log(myCar)
+// // Car { owner: 'Elon', name: 'Tesla Model S' }
+
+// myCar.drive()
+// // The Tesla Model S car owned by Elon drives on the road
+
+// console.log(myCar.getOwner())
+// // Elon
+
+// const coolCar = new SportsCar({
+// 	owner: 'Starman',
+// 	name: 'Tesla Roadster',
+// 	color: 'Red',
+// 	price: '200000', // USD
+// 	engine: 'Electric'
+//   })
+  
+//   console.log(coolCar)
+//   // SportsCar { ... }
+  
+//   coolCar.drive()
+//   // The Tesla Roadster car owned by Starman drives on the road
+  
+//   console.log(coolCar.getColor())
+//   // Red
+  
+//   console.log(coolCar.getPrice())
+//   // $200,000
+
+                   
+
+
+
 // console.log(rei.getTanggal())
